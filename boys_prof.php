@@ -56,7 +56,7 @@ mysqli_close($conn);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Boys Profiles:Matrimony by Jiinfo</title>
+<title>Boys Profiles:Sample Matrimony by Jiinfo</title>
 </head>
 
 <body>
