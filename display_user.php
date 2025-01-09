@@ -26,9 +26,10 @@ $user = mysqli_fetch_assoc($result);
 </head>
 
 <body >
-<div align="center">
+<div >
 <?php
 require_once 'include/head.php';
+require_once 'include/upper_nav.php';
 ?>
 <h1>Welcome, <?php echo $user['r_name']; ?></h1>
 
