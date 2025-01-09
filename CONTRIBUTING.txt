@@ -1,0 +1,3 @@
+One may help us to add additional column in Family Details, Like Father's Name & Occupation, Mother's Name & Coccupation, How many siblings are there, how much is married.
+Likwise in Desired Partner Data may be bifurcated such as eating habbits, smoking, education, occupation preference etc.
+Verification of input data may be extended with error message.
