@@ -38,11 +38,7 @@ if(!$stmt = mysqli_prepare($conn, "UPDATE profiles SET  weight=?, education=?, o
   mysqli_stmt_bind_param($stmt, "sssssssi",  $weight,$education,  $occupation, $income, $family_details,$partner_preferences, $filename, $user_id );
   mysqli_stmt_execute($stmt); 
 
-//$stmt = mysqli_prepare($conn, "UPDATE profiles SET ( weight=?, education=?, occupation=?, income=?, family_details=?, partner_preferences=?, profile_picture=?) WHERE user_id = ");
-//  mysqli_stmt_bind_param($stmt, "sssssssi",  $weight,$education,  $occupation, $income, $family_details,$partner_preferences, $profile_picture, $user_id );
- // mysqli_stmt_execute($stmt); 
- 
- // $query = "UPDATE profiles SET weight = '$weight', education='$education', occupation='$occupation', income='$income', profile_picture='$profile_picture',, family_details='$family_details', partner_preferences='$partner_preferences' WHERE id = '$user_id'";
+
  if(mysqli_stmt_execute($stmt))
  {
 	 echo "Updateed Succeffully!";
@@ -59,11 +55,11 @@ if(!$stmt = mysqli_prepare($conn, "UPDATE profiles SET  weight=?, education=?, o
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Edit Profile Data:Matrimony by Jiinfo</title>
+<title>Edit Profile: Sample Matrimony by Jiinfo</title>
 </head>
 
 <body>
-<div align="center">
+<div >
 <?php
 require_once 'include/head.php';
 include_once "include/upper_nav.php";
@@ -105,6 +101,6 @@ include_once "include/upper_nav.php";
 </table>
 </form>
 
-</div>
+
 </body>
 </html>
