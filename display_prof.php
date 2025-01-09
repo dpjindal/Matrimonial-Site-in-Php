@@ -9,11 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 	$user_id=$_SESSION['user_id'];
-	//header("Location:index.php");
-
-
-
-//$query = "SELECT * FROM users WHERE id = $user_id";
+	
 $query = "SELECT * FROM users  INNER JOIN profiles ON users.id  = profiles.user_id WHERE profiles.user_id = $user_id";
 $result = mysqli_query($conn, $query);
 $user = mysqli_fetch_assoc($result);
@@ -28,7 +24,7 @@ $rowcount=mysqli_num_rows($result);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Display Profile:Matrimony by Jiinfo</title>
+<title>Display Profile:Sample Matrimony by Jiinfo</title>
 <style>
 img {
   width: 200px;
