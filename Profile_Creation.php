@@ -27,7 +27,7 @@ if (isset($_POST['create_profile'])) {
   
   $filename = $_FILES["profile_picture"]["name"];
     $tempname = $_FILES["profile_picture"]["tmp_name"];
-    $folder = "/image/" . $filename;
+    $folder = "./image/" . $filename;
         
 
 // Care: shoud be:  $folder = "./image/" . $filename;
@@ -87,11 +87,7 @@ $stmt = mysqli_prepare($conn, "INSERT INTO profiles (user_id, name, gender , dob
 //  header('Location: display_prof.php');
 }
 
- /* $query = "INSERT INTO profiles (user_id, name, dob, height, weight, education, occupation, income, family_details, partner_preferences, profile_picture) VALUES ('$user_id', '$name', '$dob', '$height', '$weight', '$education', '$occupation', '$income', '$family_details', '$partner_preferences', '$profile_picture')";
-  mysqli_query($conn, $query);  
 
-  header('Location: display_prof_data.php');
-  //exit;  */
 }
 
 ?>
@@ -102,7 +98,7 @@ $stmt = mysqli_prepare($conn, "INSERT INTO profiles (user_id, name, gender , dob
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Creat Profile:Matrimony by Jiinfo</title>
+<title>Creat Profile:Sample Matrimony by Jiinfo</title>
 </head>
 
 <body>
